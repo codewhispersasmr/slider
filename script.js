@@ -31,3 +31,14 @@ $left.onclick = () => {
 $right.onclick = () => {
     move(-1);
 };
+
+let playInterval = null;
+autoplay.onchange = () => {
+    if( autoplay.checked ) {
+        playInterval = setInterval(() => {
+            move(-1);
+        }, 2000);
+    } else {
+        clearInterval(playInterval);
+    }
+};

@@ -9,6 +9,7 @@ body {
     background-color: #d2d2d2;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     height: 100vh;
 }
 
@@ -54,4 +55,8 @@ ol li {
     height: 100%;
     float: left;
     width: 500px;
+}
+
+.autoplay {
+    margin-top: 20px;
 }
